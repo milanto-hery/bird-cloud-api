@@ -1,10 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 
-@app.get("/")
-def home():
-    return {"message": "Bird Cloud API is running. Use /detections and /add endpoints."}
-
 app = FastAPI()
 storage = []
 
